@@ -11,6 +11,7 @@ services:
       - ./src:/var/www/html
     depends_on:
       - php
+      - mysql
   mysql:
     image: mariadb:10.5
     ports:
